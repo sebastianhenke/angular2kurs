@@ -1,0 +1,9 @@
+<a [routerLink]="id" class="list-group-item clearfix" routerLinkActive="active" > <!--(click)="auswahl()">  -->
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">{{rezept.titel}}</h4>
+    <p class="list-group-item-text">{{rezept.kurzinfo}}</p>
+  </div>
+  <div class="pull-right" >
+    <img [src]="rezept.bildlink" [alt]="rezept.titel" class="img-responsive" style="max-height: 50px;">
+  </div>
+</a>

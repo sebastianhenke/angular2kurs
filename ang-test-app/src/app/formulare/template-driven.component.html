@@ -1,0 +1,54 @@
+<h1>Template Driven</h1>
+<form (ngSubmit)="datenAuswerten(meinFormular)" #meinFormular="ngForm">
+  <div ngModelGroup="Nutzerdaten">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="user.name"
+             name="username"
+             required
+             >
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="text"
+             class="form-control"
+             [(ngModel)]="user.email"
+             name="email"
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+             required
+             #emailfeld="ngModel"
+             >
+      <div *ngIf="!emailfeld.valid && emailfeld.touched">Ungültige Mailadresse</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password"
+           class="form-control"
+           [(ngModel)]="user.pass"
+           name="password"
+           required
+           >
+  </div>
+  <div *ngFor="let g of geschlechter" class="radio">
+    <label>
+      <input type="radio"
+             name="geschlecht"
+             [ngModel]="user.geschlecht"
+             [value]="g"
+             >{{g}}
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary" [disabled]="!meinFormular.valid">Submit</button>
+</form>
+<div>
+  Ausgabe der Daten:
+  <ul>
+    <li>{{user.name}}</li>
+    <li>{{user.email}}</li>
+    <li>{{user.pass}}</li>
+    <li>{{user.geschlecht}}</li>
+  </ul>
+</div>

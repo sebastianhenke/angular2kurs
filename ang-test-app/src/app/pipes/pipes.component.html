@@ -1,0 +1,96 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+      <table border="1">
+        <tr>
+          <td> orginal text</td>
+          <td>{{text}}</td>
+        </tr>
+        <tr>
+          <td>pipes uppercase:</td>
+          <td>{{text|uppercase}}</td>
+        </tr>
+        <tr>
+          <td> mit slice start 5 end 14</td>
+          <td>{{text| slice:5:14}}</td>
+        </tr>
+        <tr>
+          <td>pipes kombiniert:</td>
+          <td>{{text | uppercase | slice:5:14}}</td>
+        </tr>
+        <tr>
+          <td>datum</td>
+          <td>{{datum}}</td>
+        </tr>
+        <tr>
+          <td>datum mit pipes date</td>
+          <td>{{datum |date}}</td>
+        </tr>
+          <tr>
+            <td>pipes date und Argumente 'dd.MM.yyyy' und 'HH.mm.ss'</td>
+            <td>{{datum |date: 'dd.MM.yyyy'}} und {{datum |date: 'HH.mm.ss'}}</td>
+        </tr>
+        <tr>
+          <td>eigenePipe:3 <input type="text" #eingabefeld1 (keyup)="0"></td> <!--keyup macht nichts aber löst angular-changedetection aus -->
+          <td>{{eingabefeld1.value |multipli:3}}</td>
+        </tr>
+        <tr>
+          <td>eigenePipe:5 <input type="text" #eingabefeld2></td>
+          <td>{{eingabefeld2.value |multipli:5}}</td>
+        </tr>
+        <tr>
+          <td>liste original
+            <ul>
+              <li *ngFor="let tier of liste">{{tier}}</li>
+            </ul>
+            <input type="text" #aufListe>
+            <!--1 push, also hinzufügen, 2. eine neues array erstellen und dessen reffernz auf liste kopieren damit der filter erneut aufgerufen wird -->
+            <button type="button" (click)="liste.push(aufListe.value); liste = liste.slice(0)">hinzufügen</button>
+          </td>
+          <td>liste mit pipe eigenerfilter:'e'
+            <ul>
+              <li *ngFor="let tier of liste">{{tier|meinfilter:'e'}}</li>
+            </ul>
+            <br>
+          </td>
+        </tr>
+        <tr>
+          <td>liste original
+            <ul>
+              <li *ngFor="let tier of liste">{{tier}}</li>
+            </ul>
+          </td>
+          <td>liste mit pipe eigenerfilter:'e' in ngfor
+            <ul>
+              <li *ngFor="let tier of liste|meinfilter:'e'">{{tier}}</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>asynchronerWert (Promise)</td>
+          <td>{{asynchronerWert}}</td>
+        </tr>
+        <tr>
+          <td>asynchronerWert (Promise) mit async</td>
+          <td>{{asynchronerWert|async}}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

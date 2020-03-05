@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AngTestApp</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root>Loading....</app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- eventuel umstellen auf firebase.js pder  firebase-auth.js -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCUk8EcbB2uStI7dvmFYJJO3arExIfgZkE",
+      authDomain: "test-angular-auth-fa714.firebaseapp.com",
+      databaseURL: "https://test-angular-auth-fa714.firebaseio.com",
+      storageBucket: "test-angular-auth-fa714.appspot.com",
+      messagingSenderId: "545905579845"  //,
+      //projectId: "test-angular-auth-fa714",
+      //appId: "1:545905579845:web:06d4252d6a1e8cc4d5d02c"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

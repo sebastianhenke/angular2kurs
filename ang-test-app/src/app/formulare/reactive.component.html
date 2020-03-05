@@ -1,0 +1,58 @@
+<h1>Reactive</h1>
+<form [formGroup]="meinReactiveFormular" (ngSubmit)="datenAuswerten()">
+  <div formGroupName="userdaten">
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text"
+             class="form-control"
+             formControlName="username"
+      >
+    </div>
+    <div class="form-group">
+      <label for="email">E-Mail</label>
+      <input type="text"
+             class="form-control"
+             formControlName="email"
+      >
+    </div>
+    <!-- einfacher mit get
+    <div *ngIf="!meinReactiveFormular.controls['userdaten'].controls['email'].valid && meinReactiveFormular.controls['userdaten'].controls['email'].touched">Ungültige Mailadresse</div>
+    -->
+    <div *ngIf="!meinReactiveFormular.get(['userdaten','email']).valid && meinReactiveFormular.get(['userdaten','email']).touched">Ungültige Mailadresse</div>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password"
+           class="form-control"
+           formControlName="password"
+    >
+  </div>
+  <div class="radio" *ngFor="let g of geschlechter">
+    <label>
+      <input type="radio" formControlName="geschlecht" [value]="g"> {{g}}
+    </label>
+  </div>
+  <div formArrayName="hobbys">
+    <h3>Hobbys</h3>
+    <div class="form-group" *ngFor="let h of meinReactiveFormular.get('hobbys').controls; let i = index">
+      <input type="text"
+             class="form-control"
+             formControlName="{{i}}"
+      >
+    </div>
+  </div>
+  <button type="button" class="btn btn-default"(click)="neuesHobby()">neues Hobby</button>
+  <button type="submit" class="btn btn-primary" [disabled]="!meinReactiveFormular.valid" >Submit</button>
+</form>
+<div>
+  Ausgabe der Daten:
+  <ul>
+    <li>{{meinReactiveFormular.value.userdaten.username}}</li>
+    <li>{{meinReactiveFormular.value.userdaten.email}}</li>
+    <li>{{meinReactiveFormular.value.password}}</li>
+    <li>{{meinReactiveFormular.value.geschlecht}}</li>
+    <li *ngFor="let h of meinReactiveFormular.get('hobbys').controls">
+      {{h.value}}
+    </li>
+  </ul>
+</div>

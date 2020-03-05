@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72fba7ff-5cc8-402b-b152-e213f95f3d9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/angular-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/app.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/dropdown.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste-hinzufuegen.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste-hinzufuegen.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste..routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/einkaufsliste/einkaufsliste.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezept.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptdetails/rezeptdetails.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptdetails/rezeptdetails.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte-start.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte.routing.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezepte.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptebearbeiten/rezeptebearbeiten.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptebearbeiten/rezeptebearbeiten.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptliste/rezeptartikel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptliste/rezeptartikel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptliste/rezeptliste.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/rezepte/rezeptliste/rezeptliste.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/shared/zutaten.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/app/start.componet.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-kochbuch/src/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/angular-cli.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/Animation/ani.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/another/another.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/app.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/app.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/app.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/app.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/protected/protected.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/protected/protected.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/unprotected/signin.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/unprotected/signup.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/auth/user.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/databinding/databinding.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/databinding/databinding.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/databinding/databinding.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/databinding/event-binding/event-binding.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/databinding/property-binding/property-binding.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/eigenes-if.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/formulare/reactive.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/formulare/reactive.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/formulare/template-driven.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/formulare/template-driven.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/http/http.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/http/http.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/http/http.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/markierung.directive.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/other/other.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/other/other.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/other/other.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/pipes/meinfilter.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/pipes/multipli.pipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/pipes/pipes.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/pipes/pipes.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/service/cmp-a.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/service/cmp-b.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/service/data.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/service/log.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/service/service.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/shared/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user-detail.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user-detail.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user-edit.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user.routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/app/user/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/environments/environment.prod.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/environments/environment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/polyfills.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ang-test-app/src/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YiFSEGGyKqpBL44DfuILc8XPkh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Users\sebastian\IdeaProjects\angular2kurs\ang-kochbuch\node_modules\typescript\lib" />
+  </component>
+  <component name="RunManager" selected="npm.Kochbuch">
+    <configuration name="Kochbuch" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/ang-kochbuch/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test-app" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/ang-test-app/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.test-app" />
+      <item itemvalue="npm.Kochbuch" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72fba7ff-5cc8-402b-b152-e213f95f3d9d" name="Default Changelist" comment="" />
+      <created>1583417505796</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583417505796</updated>
+      <workItem from="1583417510545" duration="695000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="736" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583418214486">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="736" y="360" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1409@0.0.2560.1409" timestamp="1583418214486" />
+    <state x="894" y="300" key="CommitChangelistDialog2" timestamp="1583417909672">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state x="894" y="300" key="CommitChangelistDialog2/0.0.2560.1409@0.0.2560.1409" timestamp="1583417909672" />
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom" timestamp="1583418178386">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.bottom/0.0.2560.1409@0.0.2560.1409" timestamp="1583418178386" />
+    <state width="2517" height="404" key="GridCell.Tab.0.center" timestamp="1583418178385">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.center/0.0.2560.1409@0.0.2560.1409" timestamp="1583418178385" />
+    <state width="2517" height="404" key="GridCell.Tab.0.left" timestamp="1583418178385">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.left/0.0.2560.1409@0.0.2560.1409" timestamp="1583418178385" />
+    <state width="2517" height="404" key="GridCell.Tab.0.right" timestamp="1583418178385">
+      <screen x="0" y="0" width="2560" height="1409" />
+    </state>
+    <state width="2517" height="404" key="GridCell.Tab.0.right/0.0.2560.1409@0.0.2560.1409" timestamp="1583418178385" />
+  </component>
+</project>

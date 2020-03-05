@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="rezeptFormular" (ngSubmit)="speichern()">
+      <div class="row"><div class="col-xs-12">
+          <button type="submit" class="btn btn-success" [disabled]="!rezeptFormular.valid">Speichern</button>
+          <a class="btn btn-danger" (click)="zurueck()">Abbrechen</a>
+      </div></div>
+      <div class="row"><div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Title</label>
+            <input type="text"
+                   id="name"
+                   class="form-control"
+                   formControlName="titel">
+          </div>
+      </div></div>
+      <div class="row"><div class="col-xs-12">
+          <div class="form-group">
+            <label for="image-url">Image Url</label>
+            <input type="text"
+                   id="image-url"
+                   formControlName="bildlink"
+                   class="form-control"
+                   #bildURL>
+          </div>
+      </div></div>
+      <div class="row"><div class="col-xs-12">
+          <div class="img" *ngIf="bildURL.value">
+            Vorschaubild:
+            <img [src]="bildURL.value" height="50px">
+          </div>
+      </div></div>
+      <div class="row"><div class="col-xs-12">
+          <div class="form-group">
+            <label for="content">Beschreibung</label>
+            <textarea type="text"
+                      id="content"
+                      rows="6"
+                      formControlName="beschreibung"
+                      class="form-control">
+            </textarea>
+          </div>
+      </div></div>
+      <div class="row"> <div class="col-xs-12">
+          <ul class="list-group" formArrayName="zutaten">
+            <div class="row" *ngFor="let r of rezeptFormular.get('zutaten').controls; let i = index">
+              <div formGroupName="{{i}}">
+                <div class="col-sm-5">
+                  <input type="text"
+                         formControlName="name"
+                         class="form-control">
+                </div>
+                <div class="col-sm-5">
+                  <input type="text"
+                         formControlName="anzahl"
+                         class="form-control">
+                </div>
+                <div class="col-sm-2">
+                  <button class="btn btn-danger" (click)="loescheZutat(i)">
+                    X
+                  </button>
+                </div>
+              </div>
+              <br><br>
+            </div>
+          </ul>
+      </div> </div>
+    </form>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group row">
+      <div class="col-md-5">
+        <input type="text" class="form-control" #neuezutat>
+      </div>
+      <div class="col-md-5">
+        <input type="number" class="form-control" #neueanzahl>
+      </div>
+      <div class="col-md-2">
+        <button type="button"
+                class="btn btn-primary"
+                (click)="hinzufuegenZutat(neuezutat.value, neueanzahl.value);neuezutat.value='';neueanzahl.value=''">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,169 @@
+<h1>  {{title}}</h1>
+<p> die Root-Componente ist grün</p>
+<p>alle Tags sind grün.... </p>
+was nicht in einem Tag steht bleibt schwarz
+<br>
+
+
+
+
+
+<h1>
+  Authentifizierung (headercomponente)
+  <button (click)=" authent = !authent" class="btn btn-success"> da / nicht da</button>
+</h1>
+<auth-header *ngIf="authent"></auth-header>
+<router-outlet name="login"></router-outlet>
+
+
+
+
+<h1>
+  Animationen
+  <button (click)=" ani = !ani" class="btn btn-success"> da / nicht da</button>
+</h1>
+<app-ani *ngIf="ani"></app-ani>
+
+
+
+
+<h1>
+  Http service
+  <button (click)="httpCompo = !httpCompo" class="btn btn-success"> da / nicht da</button>
+</h1>
+<app-http *ngIf="httpCompo"></app-http>
+
+
+
+
+<h1>
+  Pipes
+  <button (click)="pipesCompo = !pipesCompo" class="btn btn-success"> da / nicht da</button>
+</h1>
+<app-pipes *ngIf="pipesCompo"></app-pipes>
+
+
+
+
+
+<h1>
+  Formulare
+  <button (click)="formCompo = !formCompo" class="btn btn-success"> da / nicht da</button>
+</h1>
+<div *ngIf="formCompo" class="container" >
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+      <app-template-driven></app-template-driven>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+      <app-reactive></app-reactive>
+    </div>
+  </div>
+</div>
+
+
+
+
+<h1>
+  Routing
+  <button (click)="routingCompo = !routingCompo" class="btn btn-success"> da / nicht da</button>
+</h1>
+<div *ngIf="routingCompo" class="container" >
+  <!-- alte version...ganz normaler link  läd die seite jedes mal komplett neu
+  <a href="/">/home</a>
+  <a href="/user">/user</a>
+  <a href="/userdetails">/details</a>
+  <a href="/useredit">/edit</a>
+  <a href="/other">/other</a>
+  -->
+  <!-- neue version, über angular router direktive -->
+  <a class="btn btn-primary"[routerLink]="['/home']" routerLinkActive="aktiviert" [routerLinkActiveOptions]="{exact:true}">home</a>
+  <a class="btn btn-primary"  [routerLink]="['/home']" [queryParams]="{'token':200}"  routerLinkActive="aktiviert"  [routerLinkActiveOptions]="{exact:true}"style=" font-size: xx-small">mit tocken</a>
+  <a class="btn btn-primary" [routerLink]="['/home']" fragment="mitte"  routerLinkActive="aktiviert"  [routerLinkActiveOptions]="{exact:true}"style="font-size: xx-small">mit sprung</a>
+  <a class="btn btn-primary"[routerLink]="['/other']"  routerLinkActive="aktiviert">other</a>
+  wähle User-Nummer
+  <!-- Inputfeld mit #id und ein event(input)="0" das nichts macht aber startet angular-changes-detection -->
+  <input type="number" style="width: 2.5em;border: 0" #userEingabefeld (input)="0" value="1">
+  User:
+  <a class="btn btn-primary" [routerLink]="['/user',userEingabefeld.value]"  routerLinkActive="aktiviert"  [routerLinkActiveOptions]="{exact:true}">anzeigen</a>
+  <a class="btn btn-primary" [routerLink]="['/user',userEingabefeld.value,'details']"  routerLinkActive="aktiviert">details</a>
+  <a class="btn btn-primary"  [routerLink]="['/user',userEingabefeld.value,'edit']"  routerLinkActive="aktiviert">edit</a>
+
+
+  <!-- in router-outlet wird die im routing hinterlegte componente angezeigt -->
+  <router-outlet></router-outlet>
+</div>
+
+
+
+
+<h1>
+  Services & Dependency Injection
+  <button (click)="siServiceCompo = !siServiceCompo" class="btn btn-success"> da / nicht da</button>
+</h1>
+<si-service *ngIf="siServiceCompo"></si-service>
+
+
+
+
+<h1>Componenten Verschachtelung <button (click)="otherCompo = !otherCompo" class="btn btn-success"> anzeigen / ausblenden</button></h1>
+<app-other *ngIf="otherCompo">
+  <p>
+    hier wird die andere componente geladen, bis dahin wird dieser blöde Text
+    <br>angezeigt (eingentlich grün da er in der Eltern Componente steht)
+  </p>
+</app-other>
+
+<hr>
+<h1>Databinding componenten <button (click)="bindingCompo= !bindingCompo" class="btn btn-success"> anzeigen / ausblenden</button></h1>
+<app-databinding *ngIf="bindingCompo"><span #übergabetext>übergabetext aus app.compnet</span></app-databinding>
+
+
+
+
+<h1>Directives <button (click)="directives = !directives" class="btn btn-success"> anzeigen / ausblenden</button></h1>
+<div  *ngIf="directives">
+  <h2>  Structural Directives *ngIf, *ngFor, ngSwitch und eigene</h2>
+  Funktion *ngIf:
+  <button (click)="daOderNicht = !daOderNicht" class="btn btn-success"> da / nicht da</button>
+  <p *ngIf="daOderNicht">
+    Dieser Absatz ist mal da oder weg... und wird mit *ngIf gesteuert, mit dem button kann man es ein- und ausschalten.
+    <br>Genauer wird ein Arugment namens "daOderNicht" der Componente "appComponent" auf true bzw. false gesetzt.
+    <br>Der Button wechselt den Zustand durch ersetzen des Arguments durch sein Gegenteil, also: daOderNicht = !daOderNicht
+  </p>
+  <br *ngIf="!daOderNicht">
+  Funktion *eigenesIf:
+  <button (click)="da = !da" class="btn btn-success"> da / weg</button>
+  <p *eigenesIf="da">
+    Dieser Absatz ist mal da oder weg... und wird mit einer selbst geschieben Direktive *eigenesIf gesteuert,
+    <br>diese macht genach das gleich wie *ngIf und soll nur verdeutlichen wie diese funktioniert.
+  </p>
+  <br *ngIf="!da">
+  Funktion *ngFor:
+  <ul>
+    <li *ngFor="let f of compoFarben, let i = index"> {{i+1}} - {{f}} </li>
+  </ul>
+  Funktion ngSwitch:
+  <button (click)="auswahlparameter = 0" class="btn btn-success">0</button>
+  <button (click)="auswahlparameter = 1" class="btn btn-success">1</button>
+  <button (click)="auswahlparameter = 2" class="btn btn-success">2</button>
+  <button (click)="auswahlparameter = 3" class="btn btn-success">3</button>
+  <button (click)="auswahlparameter = 4" class="btn btn-success">4</button>
+  <div [ngSwitch]="auswahlparameter">
+    <p *ngSwitchCase="1"> Absatz 1/4: Ein kurzen Text.</p>
+    <p *ngSwitchCase="2"> Absatz 2/4: Ein etwas längeren Text der aber eigentlich gar keinen Sinn macht.</p>
+    <p *ngSwitchCase="3"> Absatz 3/4: </p>
+    <p *ngSwitchCase="4"> Absatz 4/4: Absatz 3 hatte gar keinen weiteren Text... und 0 gibt es gar nicht</p>
+  </div>
+
+  <h2>  Attribut Directives (manipulieren Eigenschaften von Elementen)</h2>
+  <p meineMarkierung [normaleSchriftFarbe]="'red'">
+    Dies ist ein Absatz mit selbstgeschriebener Direktive, welche die Hindergurndfarbe jede Sek verändert.
+    <br>Wenn man mit der Maus darüber fährt wird die Schrift fett, weiß (reich und männlich),
+    <br>ist die Maus wieder weg erscheint die ursprüngliche Schriftstärkte und Farbe.
+  </p>
+</div>
+

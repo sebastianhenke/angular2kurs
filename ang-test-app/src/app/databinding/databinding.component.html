@@ -1,0 +1,35 @@
+<h3>stinginerpolation:</h3>
+<p>{{einString}} {{eineNummer}}</p>
+<input type="text" value="{{eineNummer}}">
+
+<br><h3>property binding:</h3>
+<p [innerText]="einString +' '+ eineNummer"></p>
+<input type="text" [value]="eineNummer">
+
+<div [ngClass]="{'red-border': klasseAnzeigen}" [ngStyle]="{'backgroundColor': hintergundfarbe}" #divtext >beispieltext bla bla</div>
+<app-property-binding [vorname]="name1" [nachname]="name2" *ngIf="propAnzeigen"> </app-property-binding>
+<button (click)="name1='Homer';name2='Simpson;'">heißt auch</button>
+<button (click)="propAnzeigen=false">zerstöre die app-property-binding Componente</button>
+
+<h3>event binding:</h3>
+<button (click)="klickmich($event)"> klick mich</button>
+<app-event-binding (meinEvent)="einString = $event"></app-event-binding>
+
+<h3>two way binding:</h3>
+<p>
+  <input type="text" [value]="einString" (change)="einString= eingabefeld.value" #eingabefeld>
+  zeigt den aktuellen wert und verändert ihn (change)
+</p>
+<p>
+  <input type="text" [value]="einString" (keyup)="einString= eingabefeld2.value" #eingabefeld2>
+  das gleiche feld aber ändert schon bei jedem Tastendruck (keyup)
+</p>
+<p>
+  mit #name konnte ich dem inputfeld in angular eine id geben diese wird mit name.value wieder ausgelesen: {{eingabefeld2.value}}
+<p>
+  <input type="text"  [(ngModel)]="einString">
+  das gleiche in kurzschreibweise mit [(ngModel)]
+</p>
+<ng-content></ng-content>
+
+

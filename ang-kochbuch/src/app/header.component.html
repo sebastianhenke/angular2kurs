@@ -1,0 +1,25 @@
+<header>
+  <ul class="nav nav-tabs">
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/start']">Home</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/rezepte']">Rezeptbuch</a></li>
+    <li role="presentation" routerLinkActive="active"><a [routerLink]="['/einkaufsliste']">Einkaufsliste</a></li>
+    <li class="nav navbar-nav navbar-right dropdown-menu-right">
+      <div class="dropdown" appDropdown>
+        <button class="btn btn-default dropdown-toggle"
+                type="button"
+                id="dropdownMenu1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+          Verwaltung
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a (click)="speichern()" style="cursor: pointer">Speichern</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a (click)="laden()" style="cursor: pointer">Laden</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</header>

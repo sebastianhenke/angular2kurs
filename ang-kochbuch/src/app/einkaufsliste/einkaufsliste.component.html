@@ -1,0 +1,21 @@
+<div class="row">
+  <hr>
+  <div class="h4">Einkaufsliste</div>
+  <div class="col-xs-10">
+    <app-einkaufsliste-hinzufuegen
+      [zubearbeiten]="zumbearbeiten"
+      (leeren)="auswahlLeeren()"
+    ></app-einkaufsliste-hinzufuegen>
+    <hr>
+    <ul class="list-group">
+        <a *ngFor="let zutat of einkaufsliste"
+           class="list-group-item"
+           style="cursor: pointer"
+           (click)="bearbeiten(zutat)"
+        >
+          {{zutat.name}} ({{zutat.anzahl}})
+        </a>
+    </ul>
+  </div>
+</div>
+

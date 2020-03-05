@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-xs-12">
+    <br>
+    <a class="btn btn-success" (click)="neuesRezept()">Neues Rezept</a>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <app-rezeptartikel  *ngFor="let r of rezeptListe; let i=index"  [rezept]="r" [id]="i"></app-rezeptartikel>
+    </ul>
+  </div>
+</div>

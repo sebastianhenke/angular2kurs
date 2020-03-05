@@ -1,0 +1,30 @@
+<div *ngIf="angezeigtesRezept ">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="{{angezeigtesRezept?.bildlink}}" alt="{{angezeigtesRezept?.titel}}" class="img-responsive">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{angezeigtesRezept?.titel}}</h1>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <p>{{angezeigtesRezept?.beschreibung}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="h4">Zutaten:
+      <button class="btn btn-success" (click)="aufDieListe()">Zur Einkaufsliste</button>
+      <button class="btn btn-primary"(click)="bearbeiten()">Bearbeiten</button>
+      <button class="btn btn-danger"(click)="loeschen()">Löschen</button>
+      </div>
+      <ul class="list-group">
+        <li *ngFor="let z of angezeigtesRezept?.zutaten" href="" class="list-group-item" style="cursor: pointer">{{z.name}} ({{z.anzahl}})</li>
+      </ul>
+    </div>
+  </div>
+</div>

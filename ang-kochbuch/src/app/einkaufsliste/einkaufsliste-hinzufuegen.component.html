@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-xs-12">
+    <form (ngSubmit)="hinzufuegen(diesesForm)" #diesesForm="ngForm">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label >name</label>
+          <input type="text"
+                 name="zutatname"
+                 class="form-control"
+                 [ngModel]="zubearbeiten.name"
+                 required>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label >Anzahl</label>
+          <input type="number"
+                 name="zutatanzahl"
+                 class="form-control"
+                 [ngModel]="zubearbeiten.anzahl"
+                 required>
+        </div>
+        <div class="col-xs-12">
+          <button class="btn btn-success" type="submit">speichern</button>
+          <button class="btn btn-primary"
+                  type="button"
+                  (click)="zuruecksetzten(diesesForm)">
+            zurücksetzen
+          </button>
+          <button class="btn btn-danger"
+                  type="button"
+                  (click)="loeschen(diesesForm)"
+                  *ngIf="bearbeitenModus">
+            löschen
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

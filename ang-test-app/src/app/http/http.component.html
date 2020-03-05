@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 col-xs-12">
+      <label for="=username">Benutzername</label>
+      <input type="text" id="=username" #username>
+      <label for="=email">email</label>
+      <input type="text" id="=email" #email>
+      <button (click)="senden(username.value,  email.value)">senden</button>
+      <hr>
+      <button (click)="abrufen()">Daten vom Server abrufen</button>
+      <ul>
+        <li *ngFor="let user of alleUser">{{user.username}} - {{user.email}}</li>
+      </ul>
+      <hr>
+      <h3>automatischer abruf vom server dank async pipe</h3>
+      <ul>
+        <li *ngFor="let asyncUser of asyncAlleUser | async">{{asyncUser.username}} - {{asyncUser.email}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
